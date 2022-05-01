@@ -217,7 +217,7 @@ install_XrayR() {
     wget https://jc.qqqq.world/config.yml -O /etc/XrayR/config.yml
     sed -i "s/NodeID:.*/NodeID: ${node_id}/g" /etc/XrayR/config.yml
     sed -i "s/NodeType:.*/NodeType: ${node_type}/g" /etc/XrayR/config.yml
-    sed -i "s/CertDomain:.*/CertDomain: ${Cert_Domain:}/g" /etc/XrayR/config.yml
+    sed -i "s/CertDomain:.*/CertDomain: ${Cert_Domain}/g" /etc/XrayR/config.yml
     echo ""
     echo "写入完成，正在尝试重启XrayR服务..."
     echo
