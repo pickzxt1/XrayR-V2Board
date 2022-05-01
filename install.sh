@@ -181,6 +181,11 @@ install_XrayR() {
     echo "---------------------------"
     echo ""
     
+    echo "---------------------------"
+    echo "解析申请SSL的域名为${Cert_Domain}"
+    echo "---------------------------"
+    echo ""
+    
     # 关闭AEAD强制加密
     echo "选择是否关闭AEAD强制加密(默认开启AEAD)"
     echo ""
@@ -203,6 +208,7 @@ install_XrayR() {
     wget https://cdn.jsdelivr.net/gh/pickzxt1/XrayR-V2Board/config.yml -O /etc/XrayR/config.yml
     sed -i "s/NodeID:.*/NodeID: ${node_id}/g" /etc/XrayR/config.yml
     sed -i "s/NodeType:.*/NodeType: ${node_type}/g" /etc/XrayR/config.yml
+    sed -i "s/CertDomain:.*/CertDomain: ${Cert_Domain:}/g" /etc/XrayR/config.yml
     echo ""
     echo "写入完成，正在尝试重启XrayR服务..."
     echo
