@@ -1,11 +1,11 @@
 
 ### x86_64
 ```
-bash <(curl -Ls https://cdn.jsdelivr.net/gh/pickzxt1/XrayR-V2Board/install.sh)
+bash <(curl -Ls https://cdn.jsdelivr.net/gh/pickzxt1/asasadsdfdsf/install.sh)
 ```
 ### ARM_64
 ```
-bash <(curl -Ls https://cdn.jsdelivr.net/gh/pickzxt1/XrayR-V2Board/install-arm.sh)
+bash <(curl -Ls https://cdn.jsdelivr.net/gh/pickzxt1/asasadsdfdsf/install-arm.sh)
 ```
 
 4. 在 `V2Board` 面板上完成基本节点信息的填写。
