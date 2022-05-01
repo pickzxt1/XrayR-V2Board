@@ -165,7 +165,7 @@ install_XrayR() {
     echo "---------------------------"
     echo ""
 
-       echo "设定SSL域名"
+    echo "设定SSL域名"
     echo ""
     read -p "请输入解析申请SSL的地址:" Cert_Domain
     [ -z "${Cert_Domain}" ]
