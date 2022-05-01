@@ -165,6 +165,15 @@ install_XrayR() {
     echo "---------------------------"
     echo ""
 
+       echo "设定SSL域名"
+    echo ""
+    read -p "请输入解析申请SSL的地址:" Cert_Domain
+    [ -z "${Cert_Domain}" ]
+    echo "---------------------------"
+    echo "您的节点地址为 ${Cert_Domain}"
+    echo "---------------------------"
+    echo ""
+    
     # 选择协议
     echo "选择节点类型(默认V2ray)"
     echo ""
